@@ -1,0 +1,48 @@
+/* style.css */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  padding: 0 5%;
+  position: relative; /* Adiciona position relative ao container */
+}
+
+.logo {
+  padding: 100px;
+  background-color: #ccc;
+  /* Estilize o logo de acordo com suas necessidades */
+}
+
+.menu {
+  padding: 30px;
+  background-color: #ddd;
+  /* Estilize o menu de acordo com suas necessidades */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #eee;
+  /* Estilize o conteúdo principal de acordo com suas necessidades */
+}
+
+/* Adiciona o efeito de saída da tela */
+.container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-color: rgb(11, 185, 238);
+  border-radius: 10px;
+  z-index: -1;
+  transform: rotate(-5deg);
+}
