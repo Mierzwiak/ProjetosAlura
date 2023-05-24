@@ -1,12 +1,48 @@
 /* style.css */
 
-.body {
+body {
+
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-.container {
+.menu-principal {
+  list-style: none;
+  display: flex;
+}
+
+.menu-principal li {
+  margin-right: 10px;
+}
+
+.menu-principal li.procurar {
+  margin-right: 5%;
+}
+
+.menu-principal li.categorias {
+  margin-right: 10%;
+}
+
+.menu-principal li.logo {
+  margin-right: 50%;
+}
+
+.menu-principal li.perfil {
+  margin-right: 5%;
+}
+
+.menu-principal li.favoritos {
+  margin-right: 5%;
+}
+
+.menu-principal li.carrinho {
+  margin-right: 5%;
+}
+
+.bloco-principal {
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -15,7 +51,7 @@
   position: relative; /* Adiciona position relative ao container */
 }
 
-.logo {
+.fotos {
   padding: 100px;
   background-color: #ccc;
   /* Estilize o logo de acordo com suas necessidades */
@@ -27,7 +63,7 @@
   /* Estilize o menu de acordo com suas necessidades */
 }
 
-.content {
+.conteudo {
   flex-grow: 1;
   padding: 20px;
   background-color: #eee;
@@ -35,7 +71,7 @@
 }
 
 /* Adiciona o efeito de saída da tela */
-.container::before {
+.bloco-principal::before {
   content: "";
   position: absolute;
   top: -10px;
