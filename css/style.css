@@ -12,35 +12,46 @@ body {
   list-style: none;
   display: flex;
   text-align: center;
-  border: 1px solid blue
+  padding: 0;
+  margin: 0;
+  border: 1px solid blue;
 }
 
 .menu-principal li {
-  flex-grow: 1; /* Faz com que os elementos tenham tamanhos proporcionais */
+  flex-grow: 1;
   margin-right: 10px;
+  position: relative;
 }
 
-.menu-principal li.procurar {
-  flex-basis: 5%; /* Tamanho proporcional de 5% */
-}
-
-.menu-principal li.categorias {
-  flex-basis: 10%; /* Tamanho proporcional de 10% */
-}
-
-.menu-principal li.logo {
-  flex-basis: 70%; /* Tamanho proporcional de 70% */
-}
-
-.menu-principal li.perfil,
-.menu-principal li.favoritos,
-.menu-principal li.carrinho {
-  flex-basis: 5%; /* Tamanho proporcional de 5% */
+.menu-principal li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  height: 100%;
+  border-right: 1px solid blue;
 }
 
 .menu-principal li:last-child {
-  margin-right: 0; /* Remove a margem direita do último elemento */
+  margin-right: 0;
 }
+
+.menu-principal li.categorias {
+  flex-basis: 10%;
+}
+
+.menu-principal li.logo {
+  flex-basis: 70%;
+}
+
+.menu-principal li.perfil,
+.menu-principal li.procurar,
+.menu-principal li.favoritos,
+.menu-principal li.carrinho {
+  flex-basis: 5%;
+}
+
 .bloco-principal {
   margin-top: 10%;
   display: flex;
