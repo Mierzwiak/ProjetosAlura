@@ -5,42 +5,42 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden
 }
 
 .menu-principal {
   list-style: none;
   display: flex;
+  text-align: center;
+  border: 1px solid blue
 }
 
 .menu-principal li {
+  flex-grow: 1; /* Faz com que os elementos tenham tamanhos proporcionais */
   margin-right: 10px;
 }
 
 .menu-principal li.procurar {
-  margin-right: 5%;
+  flex-basis: 5%; /* Tamanho proporcional de 5% */
 }
 
 .menu-principal li.categorias {
-  margin-right: 10%;
+  flex-basis: 10%; /* Tamanho proporcional de 10% */
 }
 
 .menu-principal li.logo {
-  margin-right: 50%;
+  flex-basis: 70%; /* Tamanho proporcional de 70% */
 }
 
-.menu-principal li.perfil {
-  margin-right: 5%;
-}
-
-.menu-principal li.favoritos {
-  margin-right: 5%;
-}
-
+.menu-principal li.perfil,
+.menu-principal li.favoritos,
 .menu-principal li.carrinho {
-  margin-right: 5%;
+  flex-basis: 5%; /* Tamanho proporcional de 5% */
 }
 
+.menu-principal li:last-child {
+  margin-right: 0; /* Remove a margem direita do último elemento */
+}
 .bloco-principal {
   margin-top: 10%;
   display: flex;
