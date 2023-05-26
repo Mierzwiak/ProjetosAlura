@@ -16,12 +16,13 @@
 
     /* CABEÇALHO */
     header a{
-        
-        color: aliceblue;
+        position: relative;
+        top: 7px;
+        color: #CED6EF;
         font-weight: 900;
-        border: 1px solid red;
+        text-decoration: none;
         text-align: center;
-        align-items: center;
+        
         
 
         
@@ -30,15 +31,16 @@
     header {
         width: 100%;
         height: var(--tamanhoHeader);
-        /* background: linear-gradient(to bottom,#045FB4, #0174DF); */
-        background-color: #3650d0;        
+        background: linear-gradient(to bottom, #3650d0, #4553A3);
+        /* background-color: #3650d0; */
+        
     }
     
     #menuSuperior{
         width: 100%;
         height: 25%;
-        align-items: center;
         text-align: center;
+        
         
     }
     
@@ -49,6 +51,7 @@
         border-left: 1px solid #3e5be9;
         border-right: 1px solid #324ac4;
         background: none;
+        color: #CED6EF;
     }
     
     
@@ -63,18 +66,17 @@
     
     #lupa-button{
         border: none;
-        /* background-color: none; */
         box-sizing: border-box;
         transition: 350ms;
-        /* border: 1px solid red; */
+        
     }
     
     #lupa-button:hover{
         width: 20%;
         box-sizing: border-box;
-        background-color: white;
+        background-color: #CED6EF;
         margin-left: 10px;
-        /* transition: 350ms; */
+        
         
     }
     
@@ -83,7 +85,7 @@
         height: 75%;
         
         box-shadow: inset 0 0 30px #2539a083;
-        /* border: 1px solid red; */
+        
 
         text-align: center;
     }
