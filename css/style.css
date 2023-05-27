@@ -21,10 +21,12 @@
     header a{
         position: relative;
         top: 0.75rem;
+        /* left: 30PX; */
         color: #CED6EF;
-        font-weight: 900;
+        font-weight: 300;
         text-decoration: none;
-        text-align: center;
+        align-items: center;
+        /* text-align: center; */
          
     }
 
@@ -36,32 +38,38 @@
     }
     
     #menuSuperior{
+        display: flex;
         width: 100%;
         height: 25%;
         text-align: center;
+        /* justify-content: space-between; */
         
     }
     
     .botoesMenuEsquerda, .botoesMenuDireita{
-        width: calc(var(--tamanhoHeader)* 0.25);
+        /* width: calc(var(--tamanhoHeader)* 0.25); */
         height: 100%;
         border: none;
         border-left: 1px solid #3e5be9;
         border-right: 1px solid #324ac4;
         background: none;
         color: #CED6EF;
+        width: 2.5%;
 
     }
     
+    #menuOpções{
+        /* width: 2,5%; */
+    }
     
     .botoesMenuDireita{
-        float: right;
+        /* float: right; */
         
     }
     
     .botoesMenuEsquerda{
-        float: left;
-
+        /* float: left; */
+        
     }
     
     
@@ -73,7 +81,12 @@
         background-size: 20px;
         background-position: center;
         background-repeat: no-repeat;
+        /* width: 2,5%; */
       
+    }
+
+    .menuSuperiorLogo {
+        width: 87.5%;
     }
     
     #lupa-button:hover{
@@ -99,7 +112,7 @@
     .menuInferiorTitulo {
         /* height: 100%; */
         /* margin: auto; */
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-bottom: 3.75rem;
      }
     
