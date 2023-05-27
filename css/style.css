@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
 :root{
     --tamanhoHeader: 10rem;
 }
@@ -5,6 +7,7 @@
 @media only screen and (min-width: 48rem){
 
     body {
+        font-family: 'Source Serif Pro', serif;
         height: 100vh;
         /* border: 1px solid black; */
     }
@@ -22,10 +25,7 @@
         font-weight: 900;
         text-decoration: none;
         text-align: center;
-        
-        
-
-        
+         
     }
 
     header {
@@ -86,13 +86,22 @@
     }
     
     #menuInferior{
+        display: flex;
+        align-items: center;
         width: 100%;
         height: 75%;
+        justify-content: center;
         /* background-color: #324ac4; */
         box-shadow: inset 0 0 30px #2539a083;
-        text-align: center;
+        
     }
-    
+  
+    .menuInferiorTitulo {
+        /* height: 100%; */
+        /* margin: auto; */
+        border: 1px solid black;
+        margin-bottom: 3.75rem;
+     }
     
     /* CORPO DO SITE */
     
