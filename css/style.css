@@ -1,13 +1,13 @@
 :root{
-    --tamanhoHeader: 120px;
+    --tamanhoHeader: 10rem;
 }
 
+@media only screen and (min-width: 48rem){
 
-*{
-    border: 1px solid red;
-}
-
-@media only screen and (min-width: 768px){
+    body {
+        height: 100vh;
+        /* border: 1px solid black; */
+    }
 
     header, footer{
         position: relative;
@@ -19,12 +19,13 @@
         height: 100%;
     }
     header a{
-        
-        color: aliceblue;
+        position: relative;
+        top: 0.75rem;
+        color: #CED6EF;
         font-weight: 900;
-        border: 1px solid red;
+        text-decoration: none;
         text-align: center;
-        align-items: center;
+        
         
 
         
@@ -33,14 +34,13 @@
     header {
         width: 100%;
         height: var(--tamanhoHeader);
-        /* background: linear-gradient(to bottom,#045FB4, #0174DF); */
-        background-color: #3650d0;        
+        background: linear-gradient(to bottom, #3650d0, #4553A3);
+        
     }
     
     #menuSuperior{
         width: 100%;
         height: 25%;
-        align-items: center;
         text-align: center;
         
     }
@@ -52,42 +52,47 @@
         border-left: 1px solid #3e5be9;
         border-right: 1px solid #324ac4;
         background: none;
+        color: #CED6EF;
+
     }
     
     
     .botoesMenuDireita{
         float: right;
+        
     }
     
     .botoesMenuEsquerda{
         float: left;
+
     }
     
     
     #lupa-button{
         border: none;
-        /* background-color: none; */
         box-sizing: border-box;
         transition: 350ms;
-        /* border: 1px solid red; */
+        background-image: url(/imagens/search.png);
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+      
     }
     
     #lupa-button:hover{
+        background-image: none;
         width: 20%;
         box-sizing: border-box;
-        background-color: white;
+        background-color: #CED6EF;
         margin-left: 10px;
-        /* transition: 350ms; */
-        
+    
     }
     
     #menuInferior{
         width: 100%;
         height: 75%;
-        
+        /* background-color: #324ac4; */
         box-shadow: inset 0 0 30px #2539a083;
-        /* border: 1px solid red; */
-
         text-align: center;
     }
     
@@ -96,10 +101,10 @@
     
     main{
         width: 60%;
-        height: 1000px;
+        height: 100%;
 
         position: relative;
-        top: -30px;
+        top: -2.5rem;
         z-index: 2;
 
         margin-left: auto;
@@ -116,9 +121,9 @@
     footer{
         
         width: 100%;
-        height: 100px;
+        height: 6.25rem;
         background-color: rgb(196, 196, 196);
-        top: -50px;
+        top: -5.62rem;
         
         
     }
