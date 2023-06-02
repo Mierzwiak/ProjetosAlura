@@ -1,12 +1,12 @@
-function clicarPesquisar(params) {
-  
-  var lupaButton = document.querySelector("#lupaButton");
-  var lupaButtonClicado = document.createElement("input");
+const lupaButton = document.querySelector("#lupaButton");
+const lupaButtonClicado = document.createElement("input"); lupaButtonClicado.type = "text"; lupaButtonClicado.id = "lupaButtonClicado"; lupaButtonClicado.className = "botoesMenuEsquerda";
 
-  lupaButtonClicado.type = "text";
-  lupaButtonClicado.id = "lupaButtonClicado";
-  lupaButtonClicado.className = "botoesMenuEsquerda";
+document.addEventListener("click", (event) => {
 
-  lupaButton.parentNode.replaceChild(lupaButtonClicado, lupaButton);
+  if (event.target.id == "lupaButton") {
+    lupaButton.parentNode.replaceChild(lupaButtonClicado, lupaButton)
+  } else if (document.querySelector("#lupaButtonClicado")){
+    lupaButtonClicado.parentNode.replaceChild(lupaButton, lupaButtonClicado)
+  }
 
-}
+})
