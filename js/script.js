@@ -1,48 +1,38 @@
 var lupaButton = document.querySelector("#lupaButton");
- 
-var lupaButtonClicado = document.createElement("input");  
+var lupaButtonClicado;
 
-
-function clicarPesquisar(params) {
-
-  
+function clicarPesquisar() {
+  lupaButtonClicado = document.createElement("input");
   lupaButtonClicado.type = "text";
   lupaButtonClicado.id = "lupaButtonClicado";
   lupaButtonClicado.className = "botoesMenuEsquerda";
 
   lupaButton.parentNode.replaceChild(lupaButtonClicado, lupaButton);
-  console.log("oi")
-  
+  console.log("oi");
 }
 
-function Reverter(){
-  // var lupaButtonClicado = document.querySelector("#lupaButtonClicado");
+function Reverter() {
   var lupaButton = document.createElement("button");
-
   lupaButton.type = "text";
   lupaButton.id = "lupaButton";
   lupaButton.className = "botoesMenuEsquerda";
-  lupaButton.onclick = ()=> {
-    clicarPesquisar()
-  }
-  
-  lupaButtonClicado.parentNode.replaceChild(lupaButton, lupaButtonClicado)
-  console.log("oi2")
+  lupaButton.onclick = clicarPesquisar;
 
+  if (lupaButtonClicado) {
+    lupaButtonClicado.parentNode.replaceChild(lupaButton, lupaButtonClicado);
+  }
+
+  
+  console.log("oi2");
 }
 
-document.addEventListener("click", (event) => { 
-  // var lupaButtonClicado = document.querySelector("#lupaButtonClicado");
+document.addEventListener("click", (event) => {
+  lupaButton = document.querySelector("#lupaButton");
   console.log(event.target)
-  console.log(lupaButtonClicado)
-  
-  if (event.target !== lupaButton && event.target.id !== "lupaButton") {
-    Reverter()
-
+  if (event.target !== lupaButton && event.target.id !== "lupaButton" && lupaButtonClicado) {
+    Reverter();
   }
- });
-
-
+});
 
 
 
