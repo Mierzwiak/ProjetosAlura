@@ -11,20 +11,9 @@ function clicarPesquisar() {
   console.log("oi");
 }
 
-function Reverter() {
-  var lupaButton = document.createElement("button");
-  lupaButton.type = "text";
-  lupaButton.id = "lupaButton";
-  lupaButton.className = "botoesMenuEsquerda";
-  lupaButton.onclick = clicarPesquisar;
-
-  if (lupaButtonClicado) {
-    lupaButtonClicado.parentNode.replaceChild(lupaButton, lupaButtonClicado);
-  }
 
   
-  console.log("oi2");
-}
+  console.log("oi2");{}
 
 document.addEventListener("click", (event) => {
   lupaButton = document.querySelector("#lupaButton");
