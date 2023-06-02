@@ -1,11 +1,12 @@
-// script.js
-// Exemplo de funcionalidade para adicionar um item ao carrinho de compras
+function clicarPesquisar(params) {
+  
+  var lupaButton = document.querySelector("#lupaButton");
+  var lupaButtonClicado = document.createElement("input");
 
-// Seleciona o botão de adicionar ao carrinho
-var addToCartButton = document.getElementById('add-to-cart');
+  lupaButtonClicado.type = "text";
+  lupaButtonClicado.id = "lupaButtonClicado";
+  lupaButtonClicado.className = "botoesMenuEsquerda";
 
-// Adiciona um ouvinte de evento de clique no botão
-addToCartButton.addEventListener('click', function() {
-  // Lógica para adicionar o item ao carrinho
-  // ...
-});
+  lupaButton.parentNode.replaceChild(lupaButtonClicado, lupaButton);
+
+}
