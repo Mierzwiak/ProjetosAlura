@@ -16,12 +16,14 @@
     /* CABEÇALHO */
 
     header a{
-        position: relative;
+        position: absolute;
         top: 0.75rem;
         color: #CED6EF;
         font-weight: 900;
         text-decoration: none;
-        text-align: center;        
+        text-align: center;   
+        left: 50%;
+        transform: translateX(-50%);     
     }
 
     header {
