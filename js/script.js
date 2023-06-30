@@ -13,6 +13,7 @@ document.addEventListener("click", (event) => {
   if (event.target.id == "lupaButton") {
     lupaButton.insertAdjacentElement("afterend", lupaButtonClicado);
     lupaButton.classList.add("botaoAtivo");
+    lupaButtonClicado.focus();
   } else if (document.querySelector("#lupaButtonClicado") && event.target.id != "lupaButtonClicado"){
     lupaButtonClicado.parentNode.removeChild(lupaButtonClicado);
     lupaButton.classList.remove("botaoAtivo");
